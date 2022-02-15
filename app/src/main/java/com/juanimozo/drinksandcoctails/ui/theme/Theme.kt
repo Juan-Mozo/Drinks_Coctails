@@ -5,17 +5,19 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
+import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
 private val DarkColorPalette = darkColors(
-    primary = Purple200,
-    primaryVariant = Purple700,
-    secondary = Teal200
+    primary = DarkBlue,
+    primaryVariant = Navy,
+    secondary = Cream,
+    background = Black
 )
 
 private val LightColorPalette = lightColors(
-    primary = Purple500,
-    primaryVariant = Purple700,
-    secondary = Teal200
+    primary = DarkBlue,
+    primaryVariant = Beige,
+    secondary = Red
 
     /* Other default colors to override
     background = Color.White,
@@ -32,14 +34,19 @@ fun DrinksCoctailsTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
 ) {
-    val colors = if (darkTheme) {
-        DarkColorPalette
-    } else {
-        LightColorPalette
-    }
+//    val colors = if (darkTheme) {
+//        DarkColorPalette
+//    } else {
+//        LightColorPalette
+//    }
+    val systemUiController = rememberSystemUiController()
+    systemUiController.setSystemBarsColor(
+        color = Navy,
+        darkIcons = false
+    )
 
     MaterialTheme(
-        colors = colors,
+        colors = DarkColorPalette,
         typography = Typography,
         shapes = Shapes,
         content = content

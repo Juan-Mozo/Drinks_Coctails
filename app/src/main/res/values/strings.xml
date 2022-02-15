@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Drinks &amp; Coctails</string>
+
+    <string name="app_name" translatable="false">Drinks &amp; Coctails</string>
+
+    <string name="search">Search</string>
+
 </resources>

@@ -2,7 +2,15 @@ package com.juanimozo.drinksandcoctails.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val Purple200 = Color(0xFFBB86FC)
-val Purple500 = Color(0xFF6200EE)
-val Purple700 = Color(0xFF3700B3)
-val Teal200 = Color(0xFF03DAC5)
+val TransparentNavy = Color(0x262D4263)
+
+val Red = Color(0xFFC84B31)
+val Cream = Color(0xFFFAEEE7)
+val Beige = Color(0xFFEBE3D5)
+val DarkYellow = Color(0xFFECB365)
+
+val DarkBlue = Color(0xFF1E4948)
+val Navy = Color(0xFF102C2E)
+
+val Gray = Color(0xFF999286)
+val Black = Color(0xFF072227)
